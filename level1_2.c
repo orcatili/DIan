@@ -2,20 +2,17 @@
 #include"stdlib.h"
 int main()
 {
-	int price, money, add;
-	money = price = add = 0;
-	printf("«Î ‰»Î…Ã∆∑◊‹º€");
-    scanf("%d", &price);
-	while (money < price) {
-		    printf("«ÎÕ∂±“");
-		    scanf("%d", &add);
-			if (add != 1 && add != 2 && add != 5) {
-				printf("Œﬁ–ßµƒÕ∂±“Ω∂Ó£¨«ÎÕ∂»Î1‘™°¢2‘™ªÚ5‘™\n");
-			}
-		    money += add;
-		}
-		printf("π∫¬Ú≥…π¶£¨’“¡„%d‘™",money - price);
-		system("pause"); 
-		return 0;
-	
+  int price, money, add;
+  money = price = add = 0;
+  printf("ËØ∑ËæìÂÖ•ÂïÜÂìÅÊÄª‰ª∑");
+  scanf("%d", &price);
+  while (money < price) {
+	printf("ËØ∑ÊäïÂ∏Å");
+	scanf("%d", &add);
+		if (add != 1 && add != 2 && add != 5) {
+			printf("Êó†ÊïàÁöÑÊäïÂ∏ÅÈáëÈ¢ùÔºåËØ∑ÊäïÂÖ•1ÂÖÉ„ÄÅ2ÂÖÉÊàñ5ÂÖÉ\n");
+		}else{money += add;}
+	printf("Ë¥≠‰π∞ÊàêÂäüÔºåÊâæÈõ∂%dÂÖÉ",money - price);
+	system("pause"); 
+return 0;	
 }
