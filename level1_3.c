@@ -7,42 +7,42 @@ int main() {
     int continue1 = 1; 
 
  
-     printf("ÇëÒÀ´ÎÊäÈëÉÌÆ·ĞÅÏ¢£º»õÎïÖÖÀà Î»ÖÃ ÊıÁ¿ ¼Û¸ñ\n");
+     printf("è¯·ä¾æ¬¡è¾“å…¥å•†å“ä¿¡æ¯ï¼šå•†å“ç§ç±» é€šé“ æ•°é‡ ä»·æ ¼\n");
      scanf(" %c %d %d %d", &goods1, &place1, &number, &price);
      getchar();  
       while (continue1==1) {
         money = 0;
-        printf("ÇëÒÀ´ÎÊäÈë¹ºÂòÉÌÆ·µÄÖÖÀà Î»ÖÃ ÊıÁ¿\n");
+        printf("è¯·ä¾æ¬¡è¾“å…¥è´­ä¹°å•†å“çš„ç§ç±» é€šé“ æ•°é‡\n");
         scanf(" %c %d %d", &goods11, &place11, &quantity); 
         while (goods1 != goods11) {
-            printf("ÎŞ¸ÃÖÖÉÌÆ·£¬ÇëÖØĞÂÊäÈëÉÌÆ·ÖÖÀà "); 
+            printf("æ— è¯¥ç§å•†å“ï¼Œè¯·é‡æ–°è¾“å…¥å•†å“ç§ç±» "); 
             scanf("%c", &goods11);       
             getchar();
         }
         while (place1 != place11) {
-            printf("Î»ÖÃ´íÎó£¬ÇëÖØĞÂÊäÈë»õÎïÎ»ÖÃ ");
+            printf("é€šé“é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥å•†å“é€šé“ ");
             scanf("%d", &place11);
         }
         while (quantity > number) {
-            printf("»õÎïÊıÁ¿²»×ã£¬ÇëÖØĞÂÊäÈë¹ºÂòÊıÁ¿ ");
+            printf("å•†å“æ•°é‡ä¸è¶³ï¼Œè¯·é‡æ–°è¾“å…¥è´­ä¹°æ•°é‡ ");
             scanf("%d", &quantity);
         }
         amount = price * quantity;
 
         while (money < amount) {
-            printf("ÇëÍ¶±Ò\n");
+            printf("è¯·æŠ•å¸\n");
             scanf("%d", &add);
             if (add != 1 && add != 2 && add != 5) {
-                printf("ÎŞĞ§µÄÍ¶±Ò½ğ¶î£¬ÇëÊäÈë1Ôª¡¢2Ôª»ò5Ôª\n");
+                printf("æ— æ•ˆçš„æŠ•å¸é‡‘é¢ï¼Œè¯·è¾“å…¥1å…ƒã€2å…ƒæˆ–5å…ƒ\n");
             }else{money += add;}
         }
-        printf("¹ºÂò³É¹¦£¬ÕÒÁã%dÔª\n", money - amount);
+        printf("è´­ä¹°æˆåŠŸï¼Œæ‰¾é›¶%då…ƒ\n", money - amount);
         number -= quantity;
         if (number > 0) {
-            printf("ÊÇ·ñ¼ÌĞø¹ºÂò£¿ÊäÈë1¼ÌĞø£¬ÊäÈë0½áÊø\n");
+            printf("æ˜¯å¦ç»§ç»­è´­ä¹°ï¼Ÿè¾“å…¥1ç»§ç»­ï¼Œè¾“å…¥0ç»“æŸ\n");
             scanf("%d", &continue1);
         }
-        else { continue1 = 0; printf("»õÎïÒÑÊÛ¿Õ\n"); }
+        else { continue1 = 0; printf("å•†å“å·²å”®ç©º\n"); }
     }
 
     system("pause");
