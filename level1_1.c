@@ -4,7 +4,7 @@ int main(){
     int number, place, price;
 	char goods;
 
-	printf("请依次输入商品信息：货物种类 位置 数量 价格");
+	printf("璇蜂緷娆¤緭鍏ュ晢鍝佷俊鎭細鍟嗗搧绉嶇被 閫氶亾 鏁伴噺 浠锋牸");
 	scanf("%c %d %d %d", &goods, &place, &number, &price);
 	printf("%d:", place);
 	for (int i = 0; i < number; i++) {
